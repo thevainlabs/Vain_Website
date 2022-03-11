@@ -1,0 +1,57 @@
+.InfoContainer {
+  display: flex;
+  width: 100%;
+  height: 88vh;
+  padding: 8vh 48px;
+  background: #131313;
+  font-family: "Sulphur Point", sans-serif;
+  color: #fff;
+  flex-direction: column;
+}
+.InfoH1 {
+  font-weight: bold;
+  font-size: 90px;
+}
+form {
+  flex: display;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  /* align-items: center; */
+  font-family: "Sulphur Point", sans-serif;
+}
+input,
+textarea {
+  border: 2px solid #f85439;
+  background: transparent;
+  color: #fff;
+  padding: 5px 1rem;
+  margin: 10px auto;
+  font-size: 1.4rem;
+  font-family: "Sulphur Point", sans-serif;
+  border-radius: none;
+  resize: none;
+  width: 100%;
+}
+::placeholder {
+  color: #fff;
+  opacity: 70%;
+}
+input[type="text"] {
+  width: 45%;
+  margin-right: 2%;
+}
+input[type="email"] {
+  width: 53%;
+}
+input[type="link"] {
+  width: 53%;
+}
+.submit-button {
+  width: 100%;
+  background: #f85439;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 14px;
+  border: none;
+}

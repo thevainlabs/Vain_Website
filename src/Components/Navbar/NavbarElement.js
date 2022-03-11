@@ -4,7 +4,7 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   background: #171717;
-  height: 80px;
+  height: 12vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 12vh;
   width: 100%;
   padding: 0 24px;
   max-width: 1600px;
@@ -35,6 +35,7 @@ export const NavLogo = styled(LinkR)`
   display: flex;
   align-items: center;
   margin-left: 24px;
+  margin-right: 24px;
 `;
 
 export const NavIcon = styled.img`
@@ -44,7 +45,7 @@ export const NavIcon = styled.img`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 840px) {
     display: block;
     position: absolute;
     top: 0;
@@ -63,7 +64,7 @@ export const NavMenu = styled.ul`
   text-align: center;
   margin-right: -22px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 840px) {
     display: none;
   }
 `;
@@ -92,7 +93,7 @@ export const NavBtn = styled.nav`
   align-items: center;
   margin-right: 24px;
   margin-left: 1rem;
-  @media screen (max-width: 768px) {
+  @media screen (max-width: 840px) {
     display: none;
   }
 `;
@@ -101,6 +102,7 @@ export const NavBtnLink = styled(LinkR)`
   background: #f85439;
   white-space: nowrap;
   padding: 5px 24px;
+  margin-right: 24px;
   color: #fff;
   font-family: "Sulphur Point", sans-serif;
   font-size: 17px;

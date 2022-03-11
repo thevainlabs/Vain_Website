@@ -1,0 +1,50 @@
+.ContactContainer {
+  background: #131313;
+  color: #fff;
+  font-family: "Sulphur Point", sans-serif;
+  height: 88vh;
+  width: 100%;
+  padding: 8vh 48px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+h1 {
+  font-size: 90px;
+}
+.ContactDetail {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.ContactLink {
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw;
+  align-items: center;
+  justify-content: left;
+  text-decoration: none;
+}
+.ContactCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.LinkImage {
+  width: 12vw;
+  height: 12vw;
+  align-items: center;
+  border-radius: 10vw;
+  object-fit: contain;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 60px;
+  }
+}

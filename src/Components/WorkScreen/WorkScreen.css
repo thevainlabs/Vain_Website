@@ -1,0 +1,48 @@
+.WorkContainer {
+  background-color: #131313;
+  display: flex;
+  height: 88vh;
+  padding: 20px 48px;
+  width: 100%;
+}
+.Container {
+  flex: 1;
+  flex-direction: row;
+}
+.TextBox {
+  color: #ffffff;
+  font-family: "Sulphur Point", sans-serif;
+}
+.TextBox > h1 {
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -0.005em;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.TextBox > h5 {
+  font-size: 23px;
+  font-style: normal;
+  letter-spacing: -0.005em;
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.ImageBox {
+  flex: 1;
+  flex-flow: row nowrap;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.img1 {
+  width: 45%;
+  border: none;
+  margin-right: -10px;
+}
+.img2 {
+  width: 45%;
+  margin-left: 0px;
+  border: none;
+}

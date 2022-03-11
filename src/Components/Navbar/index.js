@@ -13,13 +13,17 @@ import {
   NavBtnLink,
 } from "./NavbarElement";
 import logo from "../../Images/Vain-t.png";
-console.log(logo);
+import { animateScroll as scroll } from "react-scroll/modules";
+
 const Navbar = ({ toggle }) => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">
+          <NavLogo to="/" onClick={toggleHome}>
             <NavIcon src={logo} />
           </NavLogo>
           <MobileIcon onClick={toggle}>
@@ -27,16 +31,16 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks to="About">About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="work">Work</NavLinks>
+              <NavLinks to="Work">Work</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="blogs">Blogs</NavLinks>
+              <NavLinks to="Blogs">Blogs</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact">Contact</NavLinks>
+              <NavLinks to="Contact">Contact</NavLinks>
             </NavItem>
             <NavBtn>
               <NavBtnLink to="/schedulemeet">Schedule Meet</NavBtnLink>
